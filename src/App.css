@@ -1,32 +1,9 @@
 .App {
-  text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +12,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sidebar {
+  background-color: rgba(13,20,36,1);
+  width: 200px;
+  height: 100vh;
+  padding: 50px;
+  color: rgba(158, 160, 179, 1);
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover{
+  color: #ffffff;
+}
+
+.logo{
+  width: 220px;
+height: 51.76px;
+gap: 0px;
+border-radius: 9px 0px 0px 0px;
+
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sidebar-label {
+  margin-left: 15px;
+}
+
+.chat-feed-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 1);
+  width: 1650px;
+  height: 64px;
+  left: 270px;
+  gap: 470px; 
+}
+
+.Details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.Details, .Admin, .settings, .signout {
+  margin-right: 20px; /* Add some margin between elements */
+}
+
+.owner-card, .Admin {
+  display: flex; /* Make owner card and Admin section display horizontally */
+  align-items: center; /* Align elements vertically in the center */
+}
+
+.admin-img {
+  width: 40px; /* Set image width to 40px */
+  height: 40px; /* Set image height to 40px */
+  border-radius: 50px;
+  margin: 4px;
+}
+
+.owner {
+  background-color: rgba(252, 204, 85, 1); /* Set background color for Process Owner HOD */
+  color: rgba(68, 72, 109, 1); /* Set text color for Process Owner HOD */
+  padding: 5px 10px; /* Add some padding */
+  width: 166px;
+  height: 27px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  border: none;
+  gap: 10px;
+  margin: 10px;
+}
+
+.Admin button {
+  background-color: rgba(229, 83, 188, 1); /* Set background color for Admin button */
+  color: white; /* Set text color for Admin button */
+  border: none; /* Remove border from button */
+  padding: 5px 10px; 
+  cursor: pointer; 
+  border-radius:10px;
+  margin: 10px;
+}
+
+.chat{
+  color: rgba(138, 142, 166, 1);
+  font-family: Inter;
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 26.25px;
+  text-align: left;
+}
+
+.signout {
+  display: flex; /* Make the signout section a flexbox for icons and button */
+  align-items: center; /* Align icons and button vertically in the center */
+}
+
+.icons{
+  margin-right: 10px;
 }
