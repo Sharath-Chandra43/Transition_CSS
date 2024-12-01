@@ -290,7 +290,7 @@ const Home = () => {
                                 </span>
                     </div>
                     <div className='main-card'>
-                        <div className="card">
+                        <div className="text-card">
                         <div className="front">
                             <p>Lorem ipsum dolor sit amet consectetur. Et tincidunt odio vivamus ac aliquam. Placerat maecenas quis ut elementum praesent imperdiet. Egestas mattis pellentesque nibh dui sed malesuada dolor eget ipsum. Molestie nam morbi id arcu volutpat arcu. Scelerisque dui habitant ullamcorper dictum. Feugiat</p>
                         </div>
@@ -325,8 +325,7 @@ const Home = () => {
                             <div>
                                 <button className='button blue-button'><IoIosAddCircle /> Add button</button>
                                 <button  className='button'> Fee Reversal</button>
-                            </div>
-                            <div>
+                            
                             <button  className='button'> Retail Onboarding</button>
                                 <button  className='button'> Address Update</button>
                             </div>

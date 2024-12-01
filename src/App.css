@@ -63,10 +63,9 @@ border-radius: 9px 0px 0px 0px;
   justify-content: space-between;
   padding: 10px;
   background: rgba(255, 255, 255, 1);
-  width: 1300px;
+  width: 100%;
   height: 64px;
-  left: 570px;
-  gap: 540px; 
+  gap: 590px; 
 }
 
 .Details {
@@ -76,7 +75,7 @@ border-radius: 9px 0px 0px 0px;
 }
 
 .Details, .Admin, .settings, .signout {
-  margin-right: 15px; /* Add some margin between elements */
+  margin-right:5px; /* Add some margin between elements */
 }
 
 .owner-card, .Admin {
@@ -88,7 +87,6 @@ border-radius: 9px 0px 0px 0px;
   width: 40px; /* Set image width to 40px */
   height: 40px; /* Set image height to 40px */
   border-radius: 50px;
-  margin: 4px;
 }
 
 .owner {
@@ -125,16 +123,16 @@ border-radius: 9px 0px 0px 0px;
 .signout {
   display: flex; /* Make the signout section a flexbox for icons and button */
   align-items: center; /* Align icons and button vertically in the center */
-  margin-left:20px;
+  margin-left:0;
 }
 
 .icons{
-  margin-right: 30px;
+  margin-right:5px;
 }
 
 
 .chats-container{
-  width:1,575px;
+  width:100%;
 height:64px;
 top: 89px;
 left: 295px;
@@ -144,21 +142,23 @@ flex-wrap: wrap;
 
 }
 
+@media (max-width:768px) {
+  .chats-container{
+    flex-direction: column;
+  }
+}
+
 .chatters-card{
-width: Fixed (213px);
-height: Fixed (64px);
-padding: 10px;
+width: 213px;
+height: 64px;
 border-radius: 10px 10px 0px 0px;
 display: flex;
 justify-content:flex-start;
-
-
 }
 
 .ellipse{
   width: 38px;
 height: 38px;
-gap: 10px;
 border-radius: 25px;
 background: rgba(238, 240, 245, 1);
 border: 1px solid rgba(76, 98, 146, 0.1);
@@ -167,19 +167,17 @@ border: 1px solid rgba(76, 98, 146, 0.1);
 .ellipse>p{
   color: rgba(215, 175, 72, 1);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom:20px;
 }
 
 .chater-name{
 font-family: Inter;
 font-size: 18px;
 font-weight: 600;
-line-height: 21px;
-text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: rgba(15, 23, 41, 1);
-
+margin-left: 0;
 }
 
 .message{
@@ -213,17 +211,18 @@ border-radius: 10px 0px 0px 0px;
 
 }
 
+.card-container{
+  display: flex;
+
+}
+
 .card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
-  margin: 5px;
   display: flex;
-  width:fixed 200px;
+  width: 200px;
 height: 120px;
-gap: 20px;
-
-
 
 }
 
@@ -287,8 +286,6 @@ color: rgba(103, 107, 137, 1);
   font-family: Inter;
 font-size: 14px;
 font-weight: 400;
-line-height: 21px;
-text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: rgba(103, 107, 137, 1);
@@ -299,7 +296,6 @@ color: rgba(103, 107, 137, 1);
   flex-direction: row;
   align-items: space-between;
   justify-content: space-between;
-  padding: 10px;
   border-radius: 5px;
 
 }
@@ -312,7 +308,7 @@ color: rgba(103, 107, 137, 1);
 
 .customer-id {
   color: #999898;
-  margin-right: 5px;
+  
 }
 
 .customer-container{
@@ -332,7 +328,6 @@ color: rgba(103, 107, 137, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   text-align: center;
 }
 
@@ -372,25 +367,18 @@ border-radius: 10px 0px 0px 0px;
 }
 
 .conversation-top{
-  width: 478px;
+width: 398px;
 height:51px;
-top: 178px;
-left: 770px;
-
 border: 0px 0px 1px 0px;
 display: flex;
 }
 
 .conversation-top-card{
-  width: 121px;
+  width: 125px;
 height: 51px;
 padding: 15px 0px 0px 0px;
-
 border: 0px 0px 1px 0px;
-display: flex;
 
-justify-content: center;
-align-items: center;
 }
 
 .conversation-top-card>h2{ 
@@ -419,7 +407,7 @@ margin-left: 0px;
   display: flex;
   justify-content: flex-start;
   align-items:flex-start;
-
+ margin-top: 0;
  }
 
  .escalate-button{
@@ -438,7 +426,7 @@ margin-bottom: 10px;
 
 
  .converstations{
-width: 625px;
+width:100%;
 height: 681px;
 gap: 0px;
 border-radius: 10px 0px 0px 0px;
@@ -544,7 +532,7 @@ justify-content: flex-start;
 .input-container {
   display: flex;
   align-items: center;
-  width: 380px;
+  width:40%;
   padding: 20px;
   margin-top: 70px;
 }
@@ -585,16 +573,15 @@ margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 90px;
-  margin-left: 50px;
+  padding: 5px;
+  width: 100%;
 }
 
 .first-card{
-  width: 450px;
+  width:100%;
 border-radius: 10px 0px 0px 0px;
 display: flex;
 align-items: center;
-
 margin-top: 0;
 }
 
@@ -609,20 +596,12 @@ margin-top: 0;
 .main-card{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 410px;
-
 }
-.card {
-  width: 300px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
+.text-card {
+  width:100%; /* Adjust width as needed */
+  height: 200px;
   perspective: 1000px;
   position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
 }
 
 /* ... other CSS styles ... */
@@ -669,7 +648,7 @@ margin-top: 0;
   align-items: center;
   width: 380px;
   padding: 20px;
-  margin-top: 70px;
+ 
 }
 
 .input-containers input {
@@ -693,8 +672,7 @@ margin-top: 0;
 }
 
 .second-card{
-  width: 450px;
-height: 274px;
+width:100%;
 top: 572px;
 left: 1420px;
 border-radius: 10px 0px 0px 0px;
@@ -719,7 +697,7 @@ background: rgba(255, 255, 255, 1);
 .third-card{
  display: flex;
  flex-direction: column;
- margin: 20px;
+ width: 400px;
 }
 
 .button{
@@ -738,18 +716,13 @@ background: rgba(255, 255, 255, 1);
 .last-card{
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  width: 300px;
 }
 
 .case-fav{
   display: flex;
   align-items: center;
 }
-
-.case-fav>h2{
-  margin: 20px;
-}
-
 
 .photo-card{
   width:410px;
