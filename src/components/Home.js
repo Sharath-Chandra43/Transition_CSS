@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiSettings } from 'react-icons/ci'
+import { CiImageOn, CiSearch, CiSettings } from 'react-icons/ci'
 import { FaCheckSquare, FaLink, FaRegComments, FaRegEnvelopeOpen, FaUserPlus } from 'react-icons/fa'
 import { HiDotsVertical } from 'react-icons/hi'
 import { IoAddCircleOutline, IoHomeOutline } from 'react-icons/io5'
@@ -8,6 +8,8 @@ import { PiSignOutDuotone } from 'react-icons/pi'
 import ChatMessage from './ChatMessage'
 import { MdCheckBoxOutlineBlank } from 'react-icons/md'
 import { BsFillArrowRightSquareFill } from 'react-icons/bs'
+import { IoIosAddCircle } from 'react-icons/io'
+import { TiPinOutline } from 'react-icons/ti'
 
 const Home = () => {
   return (
@@ -74,7 +76,7 @@ const Home = () => {
            </div>
          </div>
 
-    <div className='chat-and-conversation-container'>
+            <div className='chat-and-conversation-container'>
          <div className='single-chat-container'>
             <div class="card-container">
                 <div class="card">
@@ -278,15 +280,15 @@ const Home = () => {
 
 
     <div className='right-side-container'>
-        <div className='first-card'> 
-                <h2>Ask Catura</h2>
-                    <span>
-                        <FaRegEnvelopeOpen /> WhatsApp
-                    </span>
-                    <span>
-                        <FaRegEnvelopeOpen /> Greeting
-                    </span>
-        </div>
+                    <div className='first-card'> 
+                            <h2>Ask Catura</h2>
+                                <span>
+                                    <FaRegEnvelopeOpen /> WhatsApp
+                                </span>
+                                <span>
+                                    <FaRegEnvelopeOpen /> Greeting
+                                </span>
+                    </div>
                     <div className='main-card'>
                         <div className="card">
                         <div className="front">
@@ -305,12 +307,44 @@ const Home = () => {
                             </div>
                         </div>
                         </div>
+                        
                         <div className="input-container">
                             <input type="text" placeholder="Type a Message....." />
-                            <button className='send-button'><BsFillArrowRightSquareFill /> </button>
+                            <button className='send-button'><BsFillArrowRightSquareFill size={24}/> </button>
                          </div>
+                         
                     </div>
-               
+                    <div className='second-card'>
+                        <h1>Auction Launcher</h1>
+
+                        <div className='search-input'>
+                            <CiSearch size={24}/>
+                            <input type='text' placeholder='Search actions....' className='search'/>
+                        </div>
+                        <div className='third-card'>
+                            <div>
+                                <button className='button blue-button'><IoIosAddCircle /> Add button</button>
+                                <button  className='button'> Fee Reversal</button>
+                            </div>
+                            <div>
+                            <button  className='button'> Retail Onboarding</button>
+                                <button  className='button'> Address Update</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='last-card'>
+                        <div className='case-fav'>
+                            <TiPinOutline size={24} className='blue' />
+                           <h2> Case Favorite </h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Et tincidunt </p>
+                        <div className='photo-card'>
+                            <CiImageOn size={24}/>
+                            <p>Photo</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Et tincidunt </p>
+                    </div>
                 </div>
             </div>
         </div>
